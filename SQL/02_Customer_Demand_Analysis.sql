@@ -8,7 +8,7 @@ Investigation 2 : Customer Demand Analysis (CDA)
 Objective:
 Analyze passenger demand and seat occupancy across airline
 routes to identify high-demand, low-demand, and underutilized
-routes for strategic network planning.
+routes for strategic network planning.*/
 
 Business Questions:
 
@@ -25,7 +25,6 @@ Business Questions:
 6. Which routes consistently operate above 60% seat occupancy?
 
 ==========================================================
-*/
 
 
 /*=========================================================
@@ -122,3 +121,10 @@ GROUP BY
     R.Origin_City,
     R.Destination_City
 HAVING Load_Factor > '60';
+
+
+Note:
+Passenger Traffic measures the total number of passengers
+traveling on a route, while Load Factor measures seat
+occupancy efficiency. Both metrics are analyzed together
+to understand customer demand from different perspectives.
